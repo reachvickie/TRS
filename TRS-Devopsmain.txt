@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package vit.devops.macse639.ticketreservation;
+
+import java.io.IOException;
+
+/**
+ *
+ * @author Vignesh A
+ */
+
+public class TicketReservationSystem {
+
+    public static void main(String[] args) throws IOException {
+
+        Passenger passenger = new Passenger("Vignesh A", 22, "Chennai");
+        Train train = new Train("Express", 101);
+        Ticket ticket = new Ticket(1001, "Chennai", "Bangalore", 1);
+        Payment payment = new Payment(500);
+        TicketClerk clerk = new TicketClerk("Ravi", "Station A");
+        RailwayDatabase db = new RailwayDatabase(1, "Success");
+
+        passenger.searchTrains();
+        train.displayTrain();
+        passenger.reserveSeat();
+
+        ticket.paymentAmount();
+        payment.makePayment();
+        
+        clerk.reserveTicket();
+        db.connectDatabase();
+        
+        MetricsClass.startServer();
+        System.out.println("Ticket Reservation System Running...");
+    }
+}

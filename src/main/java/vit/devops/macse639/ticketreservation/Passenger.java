@@ -26,7 +26,7 @@ public class Passenger {
     public void viewSchedule() {
         System.out.println("Viewing schedule...");
     }
-
+    
     public void reserveSeat() {
         System.out.println("Seat reserved.");
     }
@@ -46,4 +46,6 @@ public class Passenger {
     public String getName() {
         return name;
     }
+
+ 
 }
