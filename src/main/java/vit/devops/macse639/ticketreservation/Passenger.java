@@ -20,7 +20,7 @@ public class Passenger {
     }
 
     public void searchTrains() {
-        System.out.println("Searching trains...");
+        System.out.println("Searching trainsssss...");
     }
 
     public void viewSchedule() {
