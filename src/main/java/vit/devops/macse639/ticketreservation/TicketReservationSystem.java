@@ -33,6 +33,6 @@ public class TicketReservationSystem {
         clerk.reserveTicket();
         db.connectDatabase();
 
-        return "Ticket Reservation System Executed Successfully fot the seconf time";
+        return "Ticket Reservation System Executed Successfully for the second time";
     }
 }
